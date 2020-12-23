@@ -136,7 +136,7 @@ ea_generic={
     'max_value': 30, # max genotype value
     'min_strategy': 0.5, # min value for the mutation
     'max_strategy': 3, # max value for the mutation
-    'nb_gen': 10, # number of generations
+    'nb_gen': 100, # number of generations
     'mu': 100, # population size
     'lambda': 200, # number of individuals generated
     'nov_k': 15, # k parameter of novelty search
@@ -150,7 +150,7 @@ ea_random_sampling={
     'min_strategy': 0.5, # min value for the mutation
     'max_strategy': 3, # max value for the mutation
     'nb_gen': 0, # number of generations
-    'mu': 200100, # population size
+    'mu': 10000, # population size
     'lambda': 200, # number of individuals generated
     'nov_k': 15, # k parameter of novelty search
     'nov_add_strategy': "random", # archive addition strategy (either 'random' or 'novel')
@@ -201,7 +201,7 @@ registered_envs["fastsim_RANDOM"].update(ea_FIT_NS)
 
 # change this variable to choose the environment you are interested in 
 # (one among the keys of registered_envs)
-env_name="fastsim_NS"
+env_name="fastsim_RANDOM"
 
 
 def eval_nn(genotype, resdir, render=False, dump=False, name=""):
